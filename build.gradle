@@ -1,0 +1,25 @@
+plugins {
+    id 'org.springframework.boot' version '2.4.2'
+    id 'io.spring.dependency-management' version '1.0.11.RELEASE'
+    id 'java'
+}
+
+group 'ru.kolyanpie'
+version '0.0.1-SNAPSHOT'
+sourceCompatibility = '1.8'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    //spring
+    compile group: 'org.springframework.boot', name: 'spring-boot-starter-web', version: '2.3.8.RELEASE'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    // https://mvnrepository.com/artifact/org.projectlombok/lombok
+    implementation group: 'org.projectlombok', name: 'lombok', version: '1.18.18'
+    // https://mvnrepository.com/artifact/ch.qos.logback/logback-classic
+    implementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.2.3'
+    //discord4j
+    implementation 'com.discord4j:discord4j-core:3.1.3'
+}
